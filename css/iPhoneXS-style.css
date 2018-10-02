@@ -1,0 +1,82 @@
+body{
+background-color: black;
+
+}
+.iphone-x{
+	position: fixed;
+	height: 500px;
+	width: 250px;
+	background-color: #242A29;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 25px;
+	border-color: #d0d5db;
+	border-style: outset;
+}
+.phone-notch{
+	position: relative;
+	background-color: #232b2b;
+	border-radius: 0px 0px 25px 25px;
+	top: 2%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: 20px;
+	z-index: 1;
+	
+}
+.notch-mic{
+	position: relative;
+    background-color: grey;
+    width: 40px;
+    height: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+.notch-camera{
+	position: relative;
+	padding: 0;
+    background-color: grey;
+    width: 7px;
+    height: 7px;
+	top: 25%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.phone-screen{
+	position: relative;
+	height: 500px;
+	width: 250px;
+	top: 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/iPhoneXS-Wallpaper.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 25px;
+	z-index: 0;
+}
+#phone-time{
+	position: fixed;
+	top: 10%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 40px;
+}
+#phone-date{
+	position: fixed;
+	top: 21%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 13px;
+	width: 100%;
+	text-align: center;
+	
+}
