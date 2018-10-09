@@ -24,28 +24,37 @@ $(document).ready(function () {
   month[9] = "October";
   month[10] = "November";
   month[11] = "December";
-  
+
   var day = weekday[date.getDay()];
   var daynumber = date.getDate();
   var month = month[date.getMonth()];
 
+   var timeformat = date.getHours() + ":" + date.getMinutes();
+   var dayFormat = day + " " + daynumber + " " + month;
 
-  var timeformat = date.getHours() + ":" + date.getMinutes();
-  var dayFormat = day + " " + daynumber + " " + month;
-
-  $("#phone-time").html(timeformat);
-  $("#phone-date").html(dayFormat);
-
-
+   function updateTimeHTML() {
+     $("#phone-time").html(timeformat);
+   }
+   function updateDateHTML() {
+     $("#phone-date").html(dayFormat);
+   }
+   updateTimeHTML();
+   updateDateHTML();
+   
+   var timeTimer = setInterval(updateTimeHTML, 1000);
+   var dateTimer = setInterval(updateDateHTML, 1000);
 
   $(".iphone-x").dblclick(function () {
-
     if($(".phone-screen").css("display") == "none"){
+      updateTimeHTML();
+      updateDateHTML();
       $(".phone-screen").fadeToggle(500);
     }
   });
 
   $(".phone-right-side").click(function(){
     $(".phone-screen").fadeToggle(500);
+    updateTimeHTML();
+    updateDateHTML();
   });
 });

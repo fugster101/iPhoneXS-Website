@@ -16,8 +16,119 @@ body{
 	background-color: black;
 
 }
-.iphoneXs-hero{
+.event-hero{
 
+}
+
+.apple-watch-4{
+	position: fixed;
+    height: 197px;
+    width: 162px;
+    background-color: black;
+    top: 50%;
+    right: 15%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border-color: #EAEAEA;
+    border-style: outset;
+}
+.watch-top-band{
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 115px;
+    background-color: #F2F1F6;
+    left: 50%;
+    bottom: 86%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 0px 0px 0px;
+    z-index: 0;
+}
+.right-cornerbox{
+	position: fixed;
+	    margin: 0;
+	    padding: 0;
+	    left: 100%;
+	    top: 70%;
+	    background-color:  #F2F1F6;
+	    height: 15px;
+	    width: 15px;
+	    z-index: 2;
+	    border-radius: 0px 25px 1px 0px;
+}
+.left-cornerbox{
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    right: 100%;
+    top: 70%;
+    background-color:  #F2F1F6;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    border-radius: 25px 0px 0px 1px;
+}
+
+.watch-bottom-band{
+	position: fixed;
+	    margin: 0;
+	    padding: 0;
+	    height: 50px;
+	    width: 115px;
+	    background-color: #F2F1F6;
+	    left: 50%;
+	    bottom: -38%;
+	    transform: translate(-50%, -50%);
+	    border-radius: 0px 0px 0px 0px;
+	    z-index: 0;
+}
+
+.right-bottom-cornerbox{
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 100%;
+    background-color: #F2F1F6;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    border-radius: 0px 0px 25px 0px;
+}
+.left-bottom-cornerbox{
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    right: 100%;
+    background-color: #F2F1F6;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    border-radius: 0px 0px 0px 25px;
+}
+.watch-screen{
+position: relative;
+margin: 0;
+padding: 0;
+height: 192px;
+width: 157px;
+background-color: black;
+border-radius: 20px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.apple-watch-4-crown{
+	position: fixed;
+	    margin: 0;
+	    padding: 0;
+	    left: 95%;
+	    top: 25%;
+	    transform: rotate(90deg);
+	    background-color: #EAEAEA;
+	    width: 30px;
+	    height: 5px;
+	    border-radius: 5px 5px 0px 0px;
 }
 .iphone-x{
 	position: fixed;
@@ -25,7 +136,7 @@ body{
 	width: 250px;
 	background-color: black;
 	top: 50%;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%, -50%);
 	border-radius: 25px;
 	border-color: #d0d5db;
